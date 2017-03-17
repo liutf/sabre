@@ -1,6 +1,5 @@
 package com.sabre.demo.pojo.entity;
 
-import com.alibaba.fastjson.annotation.JSONField;
 import com.sabre.base.pojo.entity.BaseEntity;
 import lombok.Data;
 
