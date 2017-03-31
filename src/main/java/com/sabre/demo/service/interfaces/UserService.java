@@ -1,5 +1,6 @@
 package com.sabre.demo.service.interfaces;
 
+import com.sabre.base.service.BaseService;
 import com.sabre.demo.pojo.entity.UserEntity;
 
 /**
@@ -9,7 +10,7 @@ import com.sabre.demo.pojo.entity.UserEntity;
  * Author: liutf
  * Date: 2017-03-10
  */
-public interface UserService {
+public interface UserService extends BaseService<UserEntity>{
 
     UserEntity getUserByName(String name);
 
