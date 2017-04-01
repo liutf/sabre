@@ -1,4 +1,4 @@
-package com.sabre.common.util;
+package com.sabre.base.util;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;

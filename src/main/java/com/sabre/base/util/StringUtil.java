@@ -1,4 +1,4 @@
-package com.sabre.common.util;
+package com.sabre.base.util;
 
 
 import org.apache.commons.lang.StringUtils;

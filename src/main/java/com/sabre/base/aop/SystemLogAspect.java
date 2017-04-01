@@ -1,4 +1,4 @@
-package com.sabre.common.aop;
+package com.sabre.base.aop;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
@@ -29,7 +29,7 @@ public class SystemLogAspect {
 
     private Logger logger = LoggerFactory.getLogger(getClass());
 
-    @Pointcut("@annotation(com.sabre.common.aop.ControllerLog)")
+    @Pointcut("@annotation(ControllerLog)")
     public void webLog(){}
 
     @Before("webLog()")

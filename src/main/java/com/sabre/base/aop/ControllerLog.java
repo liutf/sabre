@@ -1,4 +1,4 @@
-package com.sabre.common.aop;
+package com.sabre.base.aop;
 
 import java.lang.annotation.*;
 
