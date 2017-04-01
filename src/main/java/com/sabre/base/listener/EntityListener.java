@@ -3,7 +3,7 @@ package com.sabre.base.listener;
 
 
 import com.sabre.base.pojo.entity.BaseEntity;
-import com.sabre.common.util.TimeUtil;
+import com.sabre.base.util.TimeUtil;
 
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
