@@ -1,6 +1,6 @@
 package com.sabre.demo.pojo.entity;
 
-import com.sabre.base.pojo.entity.BaseEntity;
+import com.sabre.base.domain.entity.BaseEntity;
 import lombok.Data;
 
 import javax.persistence.Column;

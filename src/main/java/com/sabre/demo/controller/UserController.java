@@ -2,7 +2,6 @@ package com.sabre.demo.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.sabre.base.controller.BaseController;
-import com.sabre.base.pojo.param.req.ReqMessageParam;
 import com.sabre.base.aop.ControllerLog;
 import com.sabre.demo.pojo.entity.UserEntity;
 import com.sabre.demo.service.interfaces.UserService;
@@ -32,8 +31,7 @@ public class UserController extends BaseController {
 
     @PostMapping(value = "/user/get",produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     @ControllerLog
-    public UserEntity getUser(@RequestBody ReqMessageParam param){
-        UserEntity user = JSON.parseObject(param.getBody(), UserEntity.class);
+    public UserEntity getUser(@RequestBody UserEntity user){
         return userService.getUserByName(user.getName());
     }
 

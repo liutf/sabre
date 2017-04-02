@@ -1,4 +1,4 @@
-package com.sabre.base.pojo.entity;
+package com.sabre.base.domain.entity;
 
 import com.sabre.base.listener.EntityListener;
 import lombok.Data;

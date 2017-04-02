@@ -22,7 +22,6 @@ import java.util.Map;
  * Author: liutf
  * Date: 2017-03-10
  */
-//@RequestMapping(value = "/")
 public class BaseController {
 
     protected final Logger logger = LoggerFactory.getLogger(getClass());
