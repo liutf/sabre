@@ -1,7 +1,7 @@
 package com.sabre.demo.service.impl;
 
 import com.sabre.demo.dao.UserDAO;
-import com.sabre.demo.pojo.entity.UserEntity;
+import com.sabre.demo.domain.entity.User;
 import com.sabre.demo.service.interfaces.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -31,52 +31,52 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void delete(UserEntity entity) throws Exception {
+    public void delete(User entity) throws Exception {
 
     }
 
     @Override
-    public UserEntity findById(Long id) {
+    public User findById(Long id) {
         return null;
     }
 
     @Override
-    public UserEntity findBySample(UserEntity sample) {
+    public User findBySample(User sample) {
         return null;
     }
 
     @Override
-    public List<UserEntity> findAll() {
+    public List<User> findAll() {
         return null;
     }
 
     @Override
-    public List<UserEntity> findAll(UserEntity sample) {
+    public List<User> findAll(User sample) {
         return null;
     }
 
     @Override
-    public Page<UserEntity> findAll(PageRequest pageRequest) {
+    public Page<User> findAll(PageRequest pageRequest) {
         return null;
     }
 
     @Override
-    public Page<UserEntity> findAll(UserEntity sample, PageRequest pageRequest) {
+    public Page<User> findAll(User sample, PageRequest pageRequest) {
         return null;
     }
 
     @Override
-    public UserEntity getUserByName(String name) {
-        return dao.findByName(name);
+    public User getUserByName(String name) {
+        return dao.findByUsername(name);
     }
 
     @Override
-    public UserEntity getUserById(long id) {
+    public User getUserById(long id) {
         return dao.findOne(id);
     }
 
     @Override
-    public UserEntity save(UserEntity entity) {
+    public User save(User entity) {
         return dao.save(entity);
     }
 }
