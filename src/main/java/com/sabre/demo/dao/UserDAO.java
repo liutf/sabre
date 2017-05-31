@@ -1,8 +1,7 @@
 package com.sabre.demo.dao;
 
 import com.sabre.base.dao.BaseDao;
-import com.sabre.demo.pojo.entity.UserEntity;
-import org.springframework.stereotype.Repository;
+import com.sabre.demo.domain.entity.User;
 
 /**
  * FileName: UserDAO
@@ -11,9 +10,8 @@ import org.springframework.stereotype.Repository;
  * Author: liutf
  * Date: 2017-03-10
  */
-@Repository
-public interface UserDAO extends BaseDao<UserEntity,Long> {
+public interface UserDAO extends BaseDao<User,Long> {
 
-    UserEntity findByName(String name);
+    User findByUsername(String username);
 
 }

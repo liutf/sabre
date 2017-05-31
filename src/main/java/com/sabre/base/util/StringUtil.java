@@ -1,7 +1,7 @@
 package com.sabre.base.util;
 
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * Created by liutf on 2016/4/25.

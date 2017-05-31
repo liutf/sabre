@@ -1,7 +1,7 @@
 package com.sabre.util;
 
 import com.alibaba.fastjson.JSON;
-import com.sabre.demo.pojo.entity.UserEntity;
+import com.sabre.demo.domain.entity.UserEntity;
 import org.junit.Test;
 
 /**
@@ -15,7 +15,6 @@ public class JsonTest {
 
     @Test
     public void test(){
-
 
         UserEntity userEntity = new UserEntity();
         userEntity.setId(1);

@@ -45,7 +45,7 @@ public class RepositoryPrimaryConfig {
 	public LocalContainerEntityManagerFactoryBean entityManagerFactoryPrimary(EntityManagerFactoryBuilder builder) {
 		return builder.dataSource(primaryDS).properties(getVendorProperties(primaryDS))
 				.packages(
-						"com.sabre.demo.pojo.entity"
+						"com.sabre.demo.domain.entity"
 				) // 设置实体类所在位置
 				.persistenceUnit("primaryPersistenceUnit").build();
 	}

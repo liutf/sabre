@@ -1,7 +1,7 @@
 package com.sabre.demo.service.interfaces;
 
 import com.sabre.base.service.BaseService;
-import com.sabre.demo.pojo.entity.UserEntity;
+import com.sabre.demo.domain.entity.User;
 
 /**
  * FileName: UserService
@@ -10,12 +10,12 @@ import com.sabre.demo.pojo.entity.UserEntity;
  * Author: liutf
  * Date: 2017-03-10
  */
-public interface UserService extends BaseService<UserEntity>{
+public interface UserService extends BaseService<User>{
 
-    UserEntity getUserByName(String name);
+    User getUserByName(String name);
 
-    UserEntity getUserById(long id);
+    User getUserById(long id);
 
-    UserEntity save(UserEntity entity);
+    User save(User entity);
 
 }
